@@ -7,7 +7,7 @@ var sesTransport = require('nodemailer-ses-transport');
 var SparkPost = require('sparkpost');
 var sparky = new SparkPost();
 
-var path_nas = '/tmp/videos/';
+var path_nas = '/tmp/';
 
 var SESCREDENTIALS = {
     accessKeyId: process.env.KEYID || '',
