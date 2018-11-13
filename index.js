@@ -1,3 +1,9 @@
+var express = require('express'),
+  apps = express(),
+  port = process.env.PORT || 3000,
+  bodyParser = require('body-parser')
+
+
 const Consumer = require('sqs-consumer');
 const AWS = require('aws-sdk');
 var SConfig = require("./worker/sConfig");
@@ -29,3 +35,4 @@ app.on('error', (err) => {
     console.log(err.message);
 });
 app.start();
+apps.listen(port);
