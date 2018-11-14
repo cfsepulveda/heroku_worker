@@ -49,7 +49,7 @@ exports.fileToConverted = function(fileName, fileId) {
 
                         Updatedb.select(responseJson.fk_id_competition, function(item) {
                             console.log(item.address)
-                            
+                            var emailText = "http://d10pkk829h9oy.cloudfront.net/public/" + item.address.S + "/" + responseJson.fk_id_competition;
                                 // var mailOptions = {
                                 //     from: 'oh.urrego@uniandes.edu.co',
                                 //     to: responseJson.email,
