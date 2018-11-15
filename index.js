@@ -1,3 +1,5 @@
+require('newrelic');
+
 var express = require('express'),
   apps = express(),
   port = process.env.PORT || 3000,
