@@ -67,7 +67,7 @@ exports.fileToConverted = function(fileName, fileId) {
 
                             sparky.transmissions.send({
                                     options: {
-                                        sandbox: true
+                                        sandbox: false
                                     },
                                     content: {
                                         from: 'testing@' + process.env.SPARKPOST_SANDBOX_DOMAIN, // 'testing@sparkpostbox.com'
